@@ -1,8 +1,5 @@
 def swap_case(s):
-    result = ''
-    for i in s:
-        result += i.upper() if i.islower() else i.lower()
-    return result
+    return ''.join([i.lower() if i.isupper() else i.upper() for i in s])
 
 
 if __name__ == '__main__':
